@@ -1,9 +1,7 @@
 body {
     height: 100%;
     margin: 0;
-    background-color:#0E4357; 
-    background-image: radial-gradient(farthest-corner at 50% 0%, #ADEEE3, #447B8C, #0E4357); 
-    /*background-image: radial-gradient(farthest-side at 50% 0%, #ADEEE3, #447B8C, #0E4357);*/
+    background: #0e4357;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
