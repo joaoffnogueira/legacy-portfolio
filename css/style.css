@@ -5,3 +5,11 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.nav-link {
+    text-decoration: none;
+    border-bottom: 3px solid #447B8C;
+}
+
+.nav-link:hover {
+    border-bottom-color: #ADEEE3;
+}
