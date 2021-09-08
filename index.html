@@ -1,363 +1,261 @@
 <!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      https://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <link href="https://www.joaonogueira.dev/favicon.ico" rel="icon" type="image/x-icon">
-    <meta content="https://www.joaonogueira.dev/" property="og:url">
-    <meta content="João F. F. Nogueira" property="og:title">
-    <meta content="Android developer, always studying Kotlin and Flutter, some Java, and a bit of general front-end."
-          name="description" property="og:description">
-    <meta content="android developer, mobile developer, kotlin developer, flutter developer, java developer, software engineer"
-          name="keywords" property="og:keywords">
-    <meta content="João F. F. Nogueira" property="og:site_name">
-    <meta property="og:image" content="https://www.joaonogueira.dev/img/preview.webp">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@joaoffnogueira">
-    <meta name="twitter:creator" content="@joaoffnogueira">
-    <meta name="twitter:title" content="João F. F. Nogueira">
-    <meta name="twitter:description"
-          content="Android developer, always studying Kotlin and Flutter, some Java, and a bit of general front-end.">
-    <meta name="twitter:image" content="https://www.joaonogueira.dev/img/preview.webp">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/devices.min.css" type="text/css">
-    <link href="./css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>João F. F. Nogueira</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2L0VG5XBCR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="A portfolio template that uses Material Design Lite." name="description">
+    <meta content="width=device-width, initial-scale=1.0, minimum-scale=1.0" name="viewport">
+    <title>MDL-Static Website</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en"
+          rel="stylesheet">
+    <link href="css/material.min.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
 
-  gtag('config', 'G-2L0VG5XBCR');
-</script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 
 <body>
-<div class="container">
-    <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">João F. F. Nogueira
-                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2 7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7H2Z" fill="#FF575B"/>
-                    <rect x="2" y="7" width="20" height="2" fill="#FF8353"/>
-                    <rect x="2" y="9" width="20" height="2" fill="#FABA2C"/>
-                    <rect x="2" y="11" width="20" height="2" fill="#7AC74D"/>
-                    <rect x="2" y="13" width="20" height="2" fill="#00B0FF"/>
-                    <rect x="2" y="15" width="20" height="2" fill="#B99FE4"/>
-                    <path d="M2 17H22C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" fill="#E39BD1"/>
-                </svg>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-                    aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">My projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact me</a>
-                    </li>
-                </ul>
-                <a class="nav-link text-white" href="./index-ptbr.html">
-                    <div class="d-inline-block" style="width: 24px; height: 24px">
-                        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                             x="0px" y="0px"
-                             viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
-<circle style="fill:#6DA544;" cx="256" cy="256" r="256"/>
-                            <polygon style="fill:#FFDA44;" points="256,100.174 467.478,256 256,411.826 44.522,256 "/>
-                            <circle style="fill:#F0F0F0;" cx="256" cy="256" r="89.043"/>
-                            <g>
-	<path style="fill:#0052B4;" d="M211.478,250.435c-15.484,0-30.427,2.355-44.493,6.725c0.623,48.64,40.227,87.884,89.015,87.884
-		c30.168,0,56.812-15.017,72.919-37.968C301.362,272.579,258.961,250.435,211.478,250.435z"/>
-                                <path style="fill:#0052B4;" d="M343.393,273.06c1.072-5.524,1.651-11.223,1.651-17.06c0-49.178-39.866-89.043-89.043-89.043
-		c-36.694,0-68.194,22.201-81.826,53.899c12.05-2.497,24.526-3.812,37.305-3.812C263.197,217.043,309.983,238.541,343.393,273.06z"
-                                />
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-                            <g>
-</g>
-</svg>
-                    </div>
-                    Portuguese version</a>
-                <a class="nav-link text-white" href="https://blog.joaonogueira.dev/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                         class="bi bi-folder-symlink-fill" viewBox="0 0 16 16">
-                        <path d="M13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2l.04.87a1.99 1.99 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14h10.348a2 2 0 0 0 1.991-1.819l.637-7A2 2 0 0 0 13.81 3zM2.19 3c-.24 0-.47.042-.683.12L1.5 2.98a1 1 0 0 1 1-.98h3.672a1 1 0 0 1 .707.293L7.586 3H2.19zm9.608 5.271-3.182 1.97c-.27.166-.616-.036-.616-.372V9.1s-2.571-.3-4 2.4c.571-4.8 3.143-4.8 4-4.8v-.769c0-.336.346-.538.616-.371l3.182 1.969c.27.166.27.576 0 .742z"/>
-                    </svg>
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header mdl-layout__header--waterfall portfolio-header">
+        <div class="mdl-layout__header-row portfolio-logo-row">
+                <span class="mdl-layout__title">
+                    <div class="portfolio-logo"></div>
+                    <span class="mdl-layout__title">João F. F. Nogueira</span>
+                </span>
+        </div>
+        <div class="mdl-layout__header-row portfolio-navigation-row mdl-layout--large-screen-only">
+            <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+                <a class="mdl-navigation__link is-active" href="#about"><i aria-hidden="true" class="material-icons">account_circle</i>
+                    About me</a>
+                <a class="mdl-navigation__link" href="#projects"><i aria-hidden="true" class="material-icons">code</i>
+                    My Projects</a>
+                <a class="mdl-navigation__link" href="#contact"><i aria-hidden="true" class="material-icons">contact_mail</i>
+                    Contact me</a>
+                <a class="mdl-navigation__link" href="index-ptbr.html"><i aria-hidden="true" class="material-icons">language</i>
+                    PT-BR version</a>
+                <a class="mdl-navigation__link" href="https://blog.joaonogueira.dev/" target="_blank"><i aria-hidden="true"
+                                                                                         class="material-icons">open_in_new</i>
                     Go to my blog</a>
-            </div>
+            </nav>
         </div>
-    </nav>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container" id="about">
-    <div class="row">
-        <div class="col-sm-5">
-            <div class="container">
-                <img src="./img/2021.webp" class="rounded mx-auto d-block img-fluid" alt="João F. F. Nogueira"
-                     style="max-height: 350px;">
-            </div>
-            <br>
-            <div class="container text-center">
-                <div class="btn-group" role="group" aria-label="Social links" style="margin-bottom: 3vh">
-                    <a href="https://www.linkedin.com/in/joaoffnogueira/" target="_blank" class="btn btn-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-linkedin" viewBox="0 0 16 16">
-                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                        </svg>
-                        Linkedin </a>
-                    <a href="https://github.com/joaoffnogueira/" target="_blank" class="btn btn-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-github" viewBox="0 0 16 16">
+    </header>
+    <div class="mdl-layout__drawer mdl-layout--small-screen-only">
+        <nav class="mdl-navigation mdl-typography--body-1-force-preferred-font">
+            <a class="mdl-navigation__link is-active" href="#about"><i aria-hidden="true" class="material-icons">account_circle</i>
+                About me</a>
+            <a class="mdl-navigation__link" href="#projects"><i aria-hidden="true" class="material-icons">code</i> My
+                Projects</a>
+            <a class="mdl-navigation__link" href="#contact"><i aria-hidden="true"
+                                                               class="material-icons">contact_mail</i> Contact me</a>
+            <a class="mdl-navigation__link" href="index-ptbr.html"><i aria-hidden="true"
+                                                                      class="material-icons">language</i> PT-BR version</a>
+            <a class="mdl-navigation__link" href="https://blog.joaonogueira.dev/" target="_blank"><i aria-hidden="true"
+                                                                                     class="material-icons">open_in_new</i>
+                Go to my blog</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <h1 class="d-none">João F. F. Nogueira - Mobile developer - Kotlin, Flutter and Java</h1>
+        <div class="mdl-grid portfolio-max-width" id="about">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Mobile developer - Kotlin, Flutter and Java</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    <ul class="demo-list-item mdl-list">
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                Hi there! I am João (something like John in English), a former biology teacher making career
+                        transition to technology as a developer.
+                        My current study and work are focused on Java, Kotlin and Flutter for mobile development.
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                                I have academic experience in technical research and extension
+                        projects, which helped me to develop communicative skills, teamwork, collaboration, experience
+                        with
+                        event organization and project management, as well as conduct research to solve problems with
+                        continuous
+                        learning. I also have teaching experience with elementary, high school and
+                        university students. I am always willing to learn new technologies from both front-end and
+                        back-end. My
+                        current knowledge includes a bit of web, and C.
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                            I am open to work as a junior developer to grow in the area,
+                        especially if I can combine my experience in education with technology.
+                            </span>
+                        </li>
+                        <li class="mdl-list__item">
+                            <span class="mdl-list__item-primary-content">
+                            Education: Systems Analysis and Development (2020-2021) | Software Engineering
+                        (2019) | Master of Environmental Education (2016-2017) | Biology (2012-2015)
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-button--mini-icon mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="https://www.linkedin.com/in/joaoffnogueira/" target="_blank">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                   class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                    </svg> Linkedin</span>
+                    </a>
+                    <a class="mdl-button mdl-button--colored mdl-button--mini-icon mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="https://github.com/joaoffnogueira/" target="_blank">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                   class="bi bi-github" viewBox="0 0 16 16">
                             <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        GitHub </a>
-                    <a href="https://twitter.com/joaoffnogueira/" target="_blank" class="btn btn-secondary">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                             class="bi bi-twitter" viewBox="0 0 16 16">
+                        </svg> GitHub</span>
+                    </a>
+                    <a class="mdl-button mdl-button--colored mdl-button--mini-icon mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="https://twitter.com/joaoffnogueira/" target="_blank">
+                        <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                   class="bi bi-twitter" viewBox="0 0 16 16">
                             <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                        </svg>
-                        Twitter </a>
+                        </svg> Twitter</span>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="mdc-card__actions">
-            <button class="mdc-icon-button mdc-card__action mdc-card__action--icon"
-                    aria-pressed="false"
-                    aria-label="Add to favorites"
-                    title="Add to favorites">
-                <i class="material-icons mdc-icon-button__icon mdc-icon-button__icon--on">favorite</i>
-                <i class="material-icons mdc-icon-button__icon">favorite_border</i>
-            </button>
-            <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="Share">share</button>
-            <button class="material-icons mdc-icon-button mdc-card__action mdc-card__action--icon" title="More options">more_vert</button>
+        <div class="mdl-grid portfolio-max-width" id="projects">
+            <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-card__media">
+                    <img alt="" border="0" class="article-image" src="img/tsfadv.com.webp">
+                </div>
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Trajano S. Filho law firm webpage</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Despite my focus on mobile, a relative who works on a law firm asked me
+                    for a new website to his job, single page, <strong>responsive</strong> and lightweight. So, this is
+                    the
+                    result. It was fun learning some <strong>Bootstrap</strong> to reach the design choices of my client
+                    respecting the responsivity demanded. Hosted on <strong>Firebase</strong> with automatic deploy from
+                    <strong>GitHub</strong>, the page is continuously updated by me, testing variations of color scheme
+                    and
+                    layout. Using the same design, I also created a 404 page and a privacy policy page.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-button--mini-icon mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="https://github.com/joaoffnogueira/tsfadv.com" target="_blank">
+                        <i aria-hidden="true" class="material-icons">code</i>
+                        <span>Code</span>
+                    </a>
+                    <a class="mdl-button mdl-button--colored mdl-button--mini-icon mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="https://tsfadv.com/" target="_blank">
+                        <i aria-hidden="true" class="material-icons">preview</i>
+                        <span>Live version</span>
+                    </a>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card d-none">
+                <div class="mdl-card__media">
+                    <img alt="" border="0" class="article-image" src=" images/example-work07.jpg">
+                </div>
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Sunt nulla</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim
+                    nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat
+                    duis.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="portfolio-example01.html">Read more</a>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card d-none">
+                <div class="mdl-card__media">
+                    <img alt="" border="0" class="article-image" src=" images/example-work02.jpg">
+                </div>
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Android.com website</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim
+                    nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat
+                    duis.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="portfolio-example01.html">Read more</a>
+                </div>
+            </div>
+            <div class="mdl-cell mdl-cell--6-col mdl-card mdl-shadow--4dp portfolio-card d-none">
+                <div class="mdl-card__media">
+                    <img alt="" border="0" class="article-image" src=" images/example-work03.jpg">
+                </div>
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text">Dashboard template</h2>
+                </div>
+                <div class="mdl-card__supporting-text">
+                    Enim labore aliqua consequat ut quis ad occaecat aliquip incididunt. Sunt nulla eu enim irure enim
+                    nostrud aliqua consectetur ad consectetur sunt ullamco officia. Ex officia laborum et consequat
+                    duis.
+                </div>
+                <div class="mdl-card__actions mdl-card--border">
+                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect mdl-button--accent"
+                       href="portfolio-example01.html">Read more</a>
+                </div>
+            </div>
         </div>
-        <div class="col text-center">
-            <p class="text-sm-start lh-sm">Android developer, always studying Kotlin and Flutter, some Java, and
-                a bit of general front-end.</p>
-            <p class="text-sm-start lh-sm">Hi there! I am João (something like John in English), a former
-                biology
-                teacher making career transition to technology as a developer.</p>
-            <p class="text-sm-start lh-sm">My current study and work are focused on Java, Kotlin and Flutter for
-                mobile development. </p>
-            <p class="text-sm-start lh-sm">I have academic experience in technical research and extension
-                projects, which helped me to develop communicative skills, teamwork, collaboration, experience with
-                event organization and project management, as well as conduct research to solve problems with continuous
-                learning. </p>
-            <p class="text-sm-start lh-sm">I also have teaching experience with elementary, high school and
-                university students. I am always willing to learn new technologies from both front-end and back-end. My
-                current knowledge includes a bit of web, and C. </p>
-            <p class="text-sm-start lh-sm">I am open to work as a junior developer to grow in the area,
-                especially if I can combine my experience in education with technology.</p>
-            <p class="text-sm-start lh-sm">Education:</p>
-            <p class="text-sm-start lh-sm">Systems Analysis and Development (2020-2021) | Software Engineering
-                (2019) | Master of Environmental Education (2016-2017) | Biology (2012-2015)</p>
+        <div class="mdl-grid portfolio-max-width" id="contact">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp portfolio-card">
+                <div class="mdl-card__title">
+                    <h2 class="mdl-card__title-text" style="text-align: center">Contact me!</h2>
+                </div>
+                <div class="mdl-card__supporting-text" style="text-align: center">
+                    <p>Let te know how can I help you and your company:</p>
+                    <a class="mdl-button mdl-button--raised mdl-button--colored mdl-button--mini-icon mdl-js-button mdl-js-ripple-effect"
+                       href="mailto:contact@joaonogueira.dev" target="_blank">
+                        <i aria-hidden="true" class="material-icons">email</i>
+                        <span>E-mail me</span>
+                    </a>
+                    <a class="mdl-button mdl-button--raised mdl-button--accent mdl-button--mini-icon mdl-js-button mdl-js-ripple-effect"
+                       href="https://www.linkedin.com/in/joaoffnogueira/" target="_blank">
+                        <i aria-hidden="true" class="material-icons">message</i>
+                        <span>DM on Linkedin</span>
+                    </a>
+                </div>
+            </div>
         </div>
-    </div>
+        <footer class="mdl-mini-footer">
+            <div class="mdl-mini-footer__left-section">
+                <div class="mdl-logo">© 2021 João F. F. Nogueira</div>
+            </div>
+            <div class="mdl-mini-footer__right-section">
+                <ul class="mdl-mini-footer__link-list">
+                    <li><a href="#">Privacy & Terms</a></li>
+                </ul>
+            </div>
+        </footer>
+    </main>
 </div>
-<h2 class="container-fluid text-center text-white px-4 py-5" id="projects" style="scroll-margin-top: 10vh">My
-    projects</h2>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="marvel-device ipad silver">
-                <div class="camera"></div>
-                <div class="screen">
-                    <div class="card">
-                        <img src="./img/tsfadv.com.webp" class="card-img-top" alt="Trajano S. Filho law firm webpage">
-                        <div class="card-body">
-                            <h5 class="card-title">Trajano S. Filho law firm webpage</h5>
-                            <p class="card-text">Despite my focus on mobile, a relative who works on a law firm asked me
-                                for a new website to his job, single page, <strong>responsive</strong> and lightweight. So, this is the
-                                result. It was fun learning some <strong>Bootstrap</strong> to reach the design choices of my client
-                                respecting the responsivity demanded. Hosted on <strong>Firebase</strong> with automatic deploy from
-                                <strong>GitHub</strong>, the page is continuously updated by me, testing variations of color scheme and
-                                layout. Using the same design, I also created a 404 page and a privacy policy page.</p>
-                            <div class="btn-group" role="group">
-                                <a href="https://github.com/joaoffnogueira/tsfadv.com" target="_blank"
-                                   class="btn btn-info">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                         class="bi bi-github" viewBox="0 0 16 16">
-                                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                                    </svg>
-                                    Code </a>
-                                <a href="https://tsfadv.com/" target="_blank" class="btn btn-info">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                         class="bi bi-globe" viewBox="0 0 16 16">
-                                        <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
-                                    </svg>
-                                    Live version </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="home"></div>
-            </div>
-            <br>
-        </div>
-        <div class="col-md-6">
-            <div class="card d-none">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <div class="btn-group" role="group">
-                        <a href="https://github.com/joaoffnogueira" class="btn btn-info">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                 class="bi bi-github" viewBox="0 0 16 16">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                            </svg>
-                            Code </a>
-                        <a href="https://www.linkedin.com/in/joaoffnogueira/" class="btn btn-info">
-                            <div class="d-inline-block" style="width: 16px; height: 16px">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
-                                    <path d="M1229 186q64 33 117 80t91 106 60 127 21 141H384q0-73 21-141t59-126 92-106 118-81q-4-7-18-33t-31-55-28-53-13-28q0-17 16-17 11 0 16 9l89 162q118-52 246-52t247 52l89-162q4-9 16-9 16 0 16 17 0 4-12 28t-29 53-30 55-19 33zM704 384q26 0 45-19t19-45q0-26-19-45t-45-19q-26 0-45 19t-19 45q0 26 19 45t45 19zm512 0q26 0 45-19t19-45q0-26-19-45t-45-19q-26 0-45 19t-19 45q0 26 19 45t45 19zM384 704h1149v759q0 28-11 53t-29 43-44 30-53 11h-116v255q0 27-10 50t-27 41-41 28-50 10q-27 0-50-10t-40-28-28-41-10-50v-255H896v255q0 27-10 50t-27 41-41 28-51 10q-27 0-50-10t-40-28-27-41-10-50v-255H521q-29 0-53-10t-44-30-29-43-11-54V704zm-192 0q26 0 49 10t41 27 28 41 10 50v512q0 26-10 49t-27 41-41 28-50 10q-26 0-49-10t-41-27-28-41-10-50V832q0-26 10-49t27-41 41-28 50-10zm1536 0q26 0 49 10t41 27 28 41 10 50v512q0 26-10 49t-27 41-41 28-50 10q-26 0-49-10t-41-27-28-41-10-50V832q0-26 10-49t27-41 41-28 50-10z"
-                                          fill="#333333"></path>
-                                </svg>
-                            </div>
-                            Download Android </a>
-                        <a href="https://twitter.com/joaoffnogueira" class="btn btn-info disabled">
-                            <div class="d-inline-block" style="width: 16px; height: 16px">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048">
-                                    <path d="M457 1477q0-1 3-15t9-35 10-46 11-47 10-39 5-20l110 64q-7 7-21 20t-30 28-35 32-32 31-25 22-11 9q-4 0-4-4zm1039-264q4 0 6 1 25 9 43 27t31 43 18 50 6 52q0 5-2 22t-6 37-9 35-11 15q-4 0-5-3-7-13-12-25t-15-24q-17-21-39-33t-43-27-34-33-14-55q0-10 2-25t11-20l61-34q4-3 12-3zm3-28l-110 62-74-131q26-17 54-32t55-30l75 131zm-498-509q0 6-8 21t-18 34-21 34-14 22l-115-68 58-99q7-10 18-10 5 0 18 6t27 15 27 17 18 11q10 7 10 17zm-415 416H403V967h256l-73 125zm621-125l71 125H785l73-125h349zm191 0h261v125h-190l-71-125zm-347-549q11 0 16 9l348 610-110 63q-5-10-23-41t-44-75-56-98-62-109-61-107-53-93-37-67-14-28q0-11 9-17 4-3 17-10t28-16 27-14 15-7zM931 803l-303 521-116-68 304-520 115 67zm93-803q141 0 272 36t244 104 207 160 161 207 103 245 37 272q0 141-36 272t-104 244-160 207-207 161-245 103-272 37q-141 0-272-36t-244-104-207-160-161-207-103-245-37-272q0-141 36-272t104-244 160-207 207-161T752 37t272-37zm0 1951q128 0 246-33t222-93 187-145 145-188 94-221 33-247q0-128-33-246t-93-222-145-187-188-145-221-94-247-33q-128 0-246 33t-222 93-187 145-145 188-94 221-33 247q0 128 33 246t93 222 145 187 188 145 221 94 247 33z"
-                                          fill="#333333"></path>
-                                </svg>
-                            </div>
-                            Download iOS </a>
-                    </div>
-                </div>
-            </div>
-            <br>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="card d-none">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <br>
-        </div>
-        <div class="col-md-6">
-            <div class="card d-none">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <br>
-        </div>
-    </div>
-</div>
-<div class="text-center text-white px-4 py-5">
-    <h2 id="contact">Contact me!</h2>
-    <p class="fs-3">Let te know how can I help you and your company:</p>
-    <a href="mailto:contact@joaonogueira.dev" class="btn btn-primary btn-lg" style="margin: 3vh">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill"
-             viewBox="0 0 16 16">
-            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
-        </svg>
-        E-mail me</a>
-    <a href="https://www.linkedin.com/in/joaoffnogueira/" class="btn btn-secondary btn-lg" style="margin: 3vh">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-             class="bi bi-linkedin" viewBox="0 0 16 16">
-            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-        </svg>
-        DM on Linkedin
-    </a>
-</div>
-<div class="container">
-    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <div class="col-md-4 d-flex align-items-center">
-            <span class="text-muted">&copy; 2021 João Nogueira.dev</span>
-        </div>
-
-        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-            <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/joaoffnogueira/" target="_blank">
-                <svg class="bi" width="24" height="24" fill="currentColor">
-                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                    <use xlink:href="https://www.linkedin.com/in/joaoffnogueira/"/>
-                </svg>
-            </a></li>
-            <li class="ms-3"><a class="text-muted" href="https://github.com/joaoffnogueira/" target="_blank">
-                <svg class="bi" width="24" height="24" fill="currentColor">
-                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                    <use xlink:href="https://github.com/joaoffnogueira/"/>
-                </svg>
-            </a></li>
-            <li class="ms-3"><a class="text-muted" href="https://twitter.com/joaoffnogueira/" target="_blank">
-                <svg class="bi" width="24" height="24" fill="currentColor">
-                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    <use xlink:href="https://twitter.com/joaoffnogueira/"/>
-                </svg>
-            </a></li>
-        </ul>
-    </footer>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-</script>
+<script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 </body>
 
 </html>
